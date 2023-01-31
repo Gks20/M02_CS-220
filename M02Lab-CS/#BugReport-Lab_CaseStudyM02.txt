@@ -1,0 +1,27 @@
+#BugReport-Lab_CaseStudyM02
+
+** Preconditions **
+
+- Lines (11 - 13)
+
+**Steps to Reproduce**
+
+- quit processing if the last name entered is 'ZZZ'
+
+
+**Expected Results**
+
+- End the process
+
+**Actual Results**
+
+- if ("ZZZ") in input:
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+
+
+**FIX**
+
+- 'input' in Line 11 changed to 'lastName'
+
+- 'end' changed to a raise 'SystemExit'
+
